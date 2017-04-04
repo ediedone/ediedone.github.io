@@ -2,3 +2,6 @@ name: DongXuenan's Blog
 markdown: kramdown
 theme: jekyll-theme-cayman
 permalink: /blog/:year/:month/:day/:title
+paginate: 20
+gems:
+  - jekyll-sitemap
