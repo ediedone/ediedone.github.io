@@ -1,7 +1,8 @@
 ---
 layout: post
-title: "清明活动"
 date: 2017-04-04
+title: 清明活动
+category: 日记
 ---
 
 * 修理小悦推车

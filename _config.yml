@@ -1,5 +1,11 @@
-name: DongXuenan's Blog
+encoding: utf-8
+name: 记录点滴
+
+# 转换
 markdown: kramdown
+highlighter: rouge
+excerpt_separator: <!--excerpt-->
+
 theme: jekyll-theme-cayman
 permalink: /blog/:year/:month/:day/:title
 paginate: 20
