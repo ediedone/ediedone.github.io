@@ -5,50 +5,51 @@ body {
 	width: 70%;
 }
 div.outer {
-    position:relative;
-    overflow: hidden;
     margin: 10px auto;
-    padding:10px;
-}
-div.inner {
-    /*width:960px;*/
-    position:relative;
-    right:300px;
     padding:10px;
 }
 div.navbox {
     width:150px;
     float:left;
-    position:relative;
     padding:5px;
 }
 div.content {
-    float:left;
-    position:relative;
-    left:5px;
-    padding-top:30px;
-    padding:10px;
+    overflow: hidden;
+    padding:30px 10px 10px 30px;
 }
 div.article {
-    position:relative;
     overflow: hidden;
-    padding:15px;
+    padding-bottom: 10px;
 }
 div.brief {
-    position:relative;
+    overflow: hidden;
 }
-ul.nav{width:200px;padding:30px 0 30px 0;background:url() no-repeat;}
-ul.nav li{margin:5px 0 0 0;}
-ul.nav li a{
-  background:#cbcbcb url() no-repeat;color:#174867;padding:7px 15px 7px 15px;width:100px;display:block;text-decoration:none;
-  -webkit-transition:all 0.3s ease-out;
-  -moz-transition:all 0.3s ease-out;
-  -o-transition:all 0.3s ease-out;
-  -webkit-box-shadow:2px 2px 4px #888;
-  -moz-box-shadow:2px 2px 4px #888;
-  -o-box-shadow:2px 2px 4px #888;
+ul.nav{
+    padding:20px 0 30px 0;
+    background:url() no-repeat;
 }
-ul.nav li a:hover{background:#ebebeb url() no-repeat;color:#67a5cd;padding:7px 15px 7px 30px;}
+ul.nav li.main {
+    margin:5px 0 0 0;
+    background:#cbcbcb url() no-repeat;
+    color:#174867;
+    padding:5px 10px 5px 10px;
+    display:block;
+    text-decoration:none;
+    -webkit-transition:all 0.3s ease-out;
+    -moz-transition:all 0.3s ease-out;
+    -o-transition:all 0.3s ease-out;
+    -webkit-box-shadow:2px 2px 4px #888;
+    -moz-box-shadow:2px 2px 4px #888;
+    -o-box-shadow:2px 2px 4px #888;
+}
+ul.nav li.sub {
+    padding:5px 10px 5px 20px;
+}
+ul.nav li a:hover {
+    background:#ebebeb url() no-repeat;
+    color:#67a5cd;
+    padding:5px 10px 5px 5px;
+}
 footer ul {
 	font-family:'Helvetica', 'Arial','Sans-Serif';
 	padding: 0px;
@@ -79,6 +80,7 @@ p {
 footer {
 	border-top: 1px solid #d5d5d5;
 	font-size: .8em;
+    clear: both
 }
 ul.posts {
 	margin: 20px auto 40px;
