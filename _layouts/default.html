@@ -7,12 +7,22 @@
   </head>
   <body>
     <div class="outer">
-      <!--div class="inner"-->
-
         <div class="navbox">
           {% for category in site.categories %}
           <ul class="nav">
-            <li><a href="{{ site.baseurl}}/category/{{ category.first }}.html">{{category.first}}（{{category.last.size}}）</a></li>
+            {% assign mainCategory = {{category.first}} | split: '/' | first %}
+            {% assign subCategory = {{category.first}} | split: '/' | last %}
+            {% if mainCategory == category.first %}
+            <li class="main"><a href="{{site.baseurl}}/category/{{category.first}}.html">{{category.first}}({{category.last.size}})</a></li>
+            {% else %}
+            <li class="main">{{mainCategory}}
+              <ul>
+                <li class="sub">
+                <a href="{{site.baseurl}}/category/{{subCategory}}.html">{{subCategory}}({{category.last.size}})</a>
+                </li>
+              </ul>
+            </li>
+            {% endif %}
           </ul>
           {% endfor %}
         </div>
@@ -20,8 +30,6 @@
         <div class="content">
           {{ content }}
         </div>
-
-      <!--/div-->
     </div>
 
     <footer>
