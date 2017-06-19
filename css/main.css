@@ -88,3 +88,39 @@ ul.posts {
 ul.posts li {
 	list-style: none
 }
+table {
+    width: 50%;
+    border: 1px solid #dedede;
+	font-size: 1.4em;
+    border-collapse: collapse;
+    empty-cells: show;
+}
+table td {
+    height: 35px;
+    border: 1px solid #dedede;
+    padding: 0 10px;
+}
+table th {
+    height: 40px;
+    font-weight: bold;
+    text-align: center !important;
+    background: rgba(158, 188, 226, 0.2)
+}
+table tbody tr:nth-child(2n) {
+    background: rgba(158,188,226,0.12)
+}
+table tr:hover {
+    background: #efefef;
+}
+table tbody td:nth-child(1) {
+    width: 25%
+}
+table tbody td:nth-child(2) {
+    width: 25%
+}
+table tbody td:nth-child(3) {
+    width: 25%
+}
+table tbody td:nth-child(4) {
+    width: 25%
+}
