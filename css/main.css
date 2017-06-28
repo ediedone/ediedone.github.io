@@ -14,12 +14,8 @@ div.navbox {
     padding:5px;
 }
 div.content {
-    overflow: hidden;
+    overflow: auto;
     padding:30px 10px 10px 30px;
-}
-div.article {
-    overflow: hidden;
-    padding-bottom: 10px;
 }
 div.brief {
     overflow: hidden;
