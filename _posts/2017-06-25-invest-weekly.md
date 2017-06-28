@@ -1,7 +1,7 @@
 ---
 layout: post
 date: 2017-06-25
-title: 风格转换
+title: 开始PK
 category: 投资/股票
 ---
 Markdown表格能力太弱，写sed脚本处理Calc转化的html用了两天时间，已经忘记上周发生什么，地产股涨得比较多。
