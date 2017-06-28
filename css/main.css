@@ -89,11 +89,19 @@ ul.posts li {
 	list-style: none
 }
 table {
-    width: 70%;
+    width: 100%;
+    clear: both;
     border: 1px solid #dedede;
 	font-size: 1.4em;
     border-collapse: collapse;
     empty-cells: show;
+}
+tbody {
+    -webkit-box;
+    width: auto;
+    white-space: nowrap;
+    overflow-x: auto;
+    overflow-y: hidden;
 }
 table td {
     height: 35px;
@@ -106,7 +114,6 @@ table th {
     text-align: center !important;
     background: rgba(158, 188, 226, 0.2)
 }
-
 table tr:hover {
     background: #efefef;
 }
