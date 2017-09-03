@@ -16,6 +16,7 @@ category: 投资/股票
 <br/>
 <br/>
 
+
 <table cellspacing="0" border="0">
 	<tr>
 		<th height="17" align="center"><font face="Noto Sans CJK SC Regular">总净值</font></th>
@@ -162,16 +163,6 @@ category: 投资/股票
 		<td align="right" sdval="0.0134" sdnum="1033;0;0.00%">1.34%</td>
 		<td align="right" bgcolor="#FFCCCC" sdval="0.0434741335279094" sdnum="1033;0;0.00%"><font color="#CC0000">4.35%</font></td>
 	</tr>
-	<tr>
-		<td height="17" align="center"><br></td>
-		<td align="left"><br></td>
-		<td align="left"><br></td>
-		<td align="left"><br></td>
-		<td align="left"><br></td>
-		<td align="left"><br></td>
-		<td align="left"><br></td>
-		<td align="left"><br></td>
-	</tr>
 </table>
 <br />
 <br />
@@ -282,26 +273,6 @@ category: 投资/股票
 		<td align="right" sdval="172.02" sdnum="1033;0;0.0000">172.0200</td>
 		<td align="right" sdval="0.0334" sdnum="1033;0;0.00%">3.34%</td>
 		<td align="right" bgcolor="#FFCCCC" sdval="0.114549936002522" sdnum="1033;0;0.00%"><font color="#CC0000">11.45%</font></td>
-	</tr>
-	<tr>
-		<td height="17" align="left"><br></td>
-		<td align="left"><br></td>
-		<td align="left"><br></td>
-		<td align="left"><br></td>
-		<td align="left"><br></td>
-		<td align="left"><br></td>
-		<td align="left"><br></td>
-		<td align="left"><br></td>
-	</tr>
-	<tr>
-		<td height="17" align="left"><br></td>
-		<td align="left"><br></td>
-		<td align="left"><br></td>
-		<td align="left"><br></td>
-		<td align="left"><br></td>
-		<td align="left"><br></td>
-		<td align="left"><br></td>
-		<td align="left"><br></td>
 	</tr>
 </table>
 <br />
