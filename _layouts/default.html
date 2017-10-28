@@ -17,6 +17,11 @@
             {% else %}
             <li class="main">{{mainCategory}}
               <ul>
+                {% if mainCategory == "投资" %}
+                <li class="sub">
+                  <a href="{{site.baseurl}}/category/曲线.html">收益率</a>
+                </li>
+                {% endif %}
                 <li class="sub">
                 <a href="{{site.baseurl}}/category/{{subCategory}}.html">{{subCategory}}({{category.last.size}})</a>
                 </li>
