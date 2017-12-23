@@ -1,6 +1,8 @@
 #!/bin/bash
+# del lines after </table>
 sed '/<\/table>/{n;N;N;N;d}' ~/temp/stock.html > temp
-sed -i '23,24d;1,21d' temp
+# del lines before <table> and width setting for first table
+sed -i '23,28d;1,21d' temp
 sed -i '/ddd/d' temp
 sed -ri 's/span=([0-9]+)/span="\1" /' temp
 sed -ri 's/=middle/="middle"/' temp
