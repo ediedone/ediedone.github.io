@@ -7,34 +7,43 @@
   </head>
   <body>
     <div class="outer">
-        <div class="navbox">
-          {% for category in site.categories %}
-          <ul class="nav">
-            {% assign mainCategory = {{category.first}} | split: '/' | first %}
-            {% assign subCategory = {{category.first}} | split: '/' | last %}
-            {% if mainCategory == category.first %}
-            <li class="main"><a href="{{site.baseurl}}/category/{{category.first}}.html">{{category.first}}({{category.last.size}})</a></li>
-            {% else %}
-            <li class="main">{{mainCategory}}
-              <ul>
-                {% if mainCategory == "投资" %}
-                <li class="sub">
-                  <a href="{{site.baseurl}}/category/曲线.html">收益率</a>
-                </li>
-                {% endif %}
-                <li class="sub">
+      <div class="navbox">
+        {% assign investProcessed = 'N' %}
+        {% for category in site.categories %}
+        <ul class="nav">
+          {% assign mainCategory = {{category.first}} | split: '/' | first %}
+          {% if mainCategory == category.first %}
+          <li class="main"><a href="{{site.baseurl}}/category/{{category.first}}.html">{{category.first}}({{category.last.size}})</a></li>
+          {% else %}
+          {% if mainCategory != "投资" or investProcessed == 'N' %}
+          <li class="main">{{mainCategory}}
+            <ul>
+              {% if mainCategory == "投资" %}
+              {% assign investProcessed = 'Y' %}
+              <li class="sub">
+                <a href="{{site.baseurl}}/category/曲线.html">收益率</a>
+              </li>
+              {% endif %}
+              {% for category in site.categories %}
+              {% assign newMainCategory = {{category.first}} | split: '/' | first %}
+              {% if newMainCategory == mainCategory %}
+              {% assign subCategory = {{category.first}} | split: '/' | last %}
+              <li class="sub">
                 <a href="{{site.baseurl}}/category/{{subCategory}}.html">{{subCategory}}({{category.last.size}})</a>
-                </li>
-              </ul>
-            </li>
-            {% endif %}
-          </ul>
-          {% endfor %}
-        </div>
+              </li>
+              {% endif %}
+              {% endfor %}
+            </ul>
+          </li>
+          {% endif %}
+          {% endif %}
+        </ul>
+        {% endfor %}
+      </div>
 
-        <div class="content">
-          {{ content }}
-        </div>
+      <div class="content">
+        {{ content }}
+      </div>
     </div>
 
     <footer>
