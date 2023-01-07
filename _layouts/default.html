@@ -11,7 +11,7 @@
         {% assign investProcessed = 'N' %}
         {% for category in site.categories %}
         <ul class="nav">
-          {% assign mainCategory = {{category.first}} | split: '/' | first %}
+          {% assign mainCategory = category.first | split: '/' | first %}
           {% if mainCategory == category.first %}
           <li class="main"><a href="{{site.baseurl}}/category/{{category.first}}.html">{{category.first}}({{category.last.size}})</a></li>
           {% else %}
@@ -25,9 +25,9 @@
               </li>
               {% endif %}
               {% for category in site.categories %}
-              {% assign newMainCategory = {{category.first}} | split: '/' | first %}
+              {% assign newMainCategory = category.first | split: '/' | first %}
               {% if newMainCategory == mainCategory %}
-              {% assign subCategory = {{category.first}} | split: '/' | last %}
+              {% assign subCategory = category.first | split: '/' | last %}
               <li class="sub">
                 <a href="{{site.baseurl}}/category/{{subCategory}}.html">{{subCategory}}({{category.last.size}})</a>
               </li>
