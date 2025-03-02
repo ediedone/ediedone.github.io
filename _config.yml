@@ -8,6 +8,5 @@ excerpt_separator: <!--excerpt-->
 
 theme: jekyll-theme-cayman
 permalink: /blog/:year/:month/:day/:title
-paginate: 20
-gems:
+plugins:
   - jekyll-sitemap
